@@ -38,7 +38,10 @@ h1 {
   font-weight: 600;
   letter-spacing: -1px;
 }
-
+.presentation {
+  display: flex;
+  flex-flow: column;
+}
 .picture-container {
   width: 100%;
   padding-inline: 2.25rem;
@@ -67,7 +70,6 @@ h1 {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  border-radius: 7px;
   color: white;
   font-size: 25px;
 }
@@ -122,6 +124,7 @@ h1 {
 
 .logo {
   width: 3rem;
+  border-radius: 0px;
 }
 
 .presentation {
@@ -140,12 +143,17 @@ h1 {
   color: white;
   background-color: salmon;
 }
-
+.details {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
 .slider {
   display: flex;
   scroll-behavior: smooth;
   overflow: hidden;
   margin-block: 1.7rem;
+  gap: 1rem;
   height: 11.5rem;
 }
 
@@ -222,6 +230,112 @@ footer {
 footer > button {
   color: white;
   background-color: black;
+}
+
+img {
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  main {
+    width: 768px;
+  }
+  .header {
+    padding: 2.25rem;
+  }
+  .btn {
+    padding-inline: 2.76rem;
+    height: 3.5rem;
+    font-size: 16px;
+  }
+  .header > button {
+    margin-right: 0.5rem;
+  }
+  .header > img {
+    width: 64px;
+  }
+  h1 {
+    font-size: 45px;
+    padding-block: 0.775rem;
+  }
+  .introduction > p {
+    width: 70%;
+    padding-bottom: 1.75rem;
+  }
+  .index {
+    padding: 2.25rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .index__item:nth-child(3) {
+    background-color: rgb(243, 158, 158);
+  }
+  .index__item:nth-child(4) {
+    background-color: rgb(97, 196, 183);
+  }
+
+  .index__item:nth-child(5) {
+    grid-column: 3 / 5;
+    grid-row: 2;
+    background-color: salmon;
+  }
+  .index__item:nth-child(6) {
+    grid-column: 3 / 5;
+  }
+  .picture-container {
+    align-self: flex-start;
+    width: 50%;
+    left: -110px;
+    padding-left: 0;
+    position: relative;
+    margin: 0;
+  }
+  .details {
+    flex-flow: row;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 8.5rem;
+  }
+  .presentation {
+    width: 40%;
+    margin: 0;
+    left: -40px;
+    position: relative;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .slider {
+    margin-top: 4rem;
+    height: 22rem;
+    margin-bottom: 3.8rem;
+    gap: 1.5rem;
+  }
+  .slider-control {
+    margin-bottom: 1.5rem;;
+  }
+  .panel {
+    margin-inline: 2.3rem;
+    padding-bottom: 5rem;
+  }
+  .panel > p {
+    font-size: 18px;
+    padding-inline: 4rem;
+  }
+  footer {
+    padding: 2.25rem;
+  }
+  footer > button {
+    margin-right: 0.5rem;
+  }
+  .logo {
+    width: 4rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  main {
+    width: 1440px;
+  }
 }
 
 /* CSS Resets */
