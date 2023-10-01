@@ -132,6 +132,10 @@ h1 {
   padding-block: 0.75rem;
 }
 
+.header > button:hover {
+  background-color: var(--purple);
+}
+
 .logo {
   width: 3rem;
   border-radius: 0px;
@@ -154,6 +158,9 @@ h1 {
   background-color: var(--salmon);
 }
 
+.presentation > button:hover {
+  background-color: var(--sandy-brown);
+}
 .details {
   display: flex;
   flex-flow: column;
@@ -182,6 +189,9 @@ h1 {
   min-height: 4rem;
   border-radius: 100%;
   cursor: pointer;
+}
+.round-btn:hover {
+  background-color: var(--purple);
 }
 
 .btn {
@@ -232,6 +242,10 @@ h1 {
   background-color: var(--salmon);
 }
 
+.panel > div > button:hover {
+  background-color: var(--sandy-brown);
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -244,6 +258,9 @@ footer > button {
   background-color: black;
 }
 
+footer > button:hover {
+  background-color: var(--purple);
+}
 img {
   border-radius: 10px;
 }
